@@ -3,7 +3,6 @@ import Dashboard from "./components/Dashboard";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 import AddProject from "./components/Project/AddProject";
-import Header from "./components/Layout/Header";
 import React from "react";
 
 function App() {
