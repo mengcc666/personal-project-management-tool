@@ -1,14 +1,17 @@
 import "./App.css";
 import Dashboard from "./components/Dashboard";
-import Header from "./components/Layout/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route } from "react-router-dom";
+import AddProject from "./components/Project/AddProject";
+import Header from "./components/Layout/Header";
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Dashboard />
-    </div>
+    <Routes>
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/addProject" element={<AddProject />} />
+    </Routes>
   );
 }
 
